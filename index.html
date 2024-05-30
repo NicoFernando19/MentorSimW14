@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+  
+
+</head>
+<body>
+
+    <section class="title">
+        <h1>Sensor Data</h1>
+    </section>
+
+    <section class="row">
+        <div class="col">
+            <div class="card">
+                <h2 class="card-title">Chart</h2>
+                <div class="card-body">
+                    <canvas id="myChart" style="width: 100%;"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h2 class="card-title">Table</h2>
+                <div class="card-body">
+                    <table id="myTable" class="display">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Average</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
