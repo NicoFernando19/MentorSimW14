@@ -4,11 +4,13 @@ const borderColors = ["rgba(255, 99, 132, 0.5)", "rgba(54, 162, 235, 0.5)", "rgb
 
 document.addEventListener('DOMContentLoaded', async ()=> {
     await main()
+    console.log("main running")
 })
 
 // Getting some data
 async function getData()
 {
+    console.log("getting data..")
     let datas = await fetch('./data.json');
     datas = await datas.json();
     return datas;
