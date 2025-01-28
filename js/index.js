@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', async ()=> {
     await main()
 })
 
+// Getting some data
 async function getData()
 {
     let datas = await fetch('./data.json');
