@@ -21,6 +21,7 @@ async function main()
     drawTable(datas);
 }
 
+// Draw chart function
 function drawChart(datas)
 {
     let labels = datas.find(item => item['device'] === 'sensor1')['data'].map(item=>item['timestamp']);
