@@ -14,6 +14,7 @@ async function getData()
     return datas;
 }
 
+//Main function
 async function main()
 {
     let datas = await getData();
