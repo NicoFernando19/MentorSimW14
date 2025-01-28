@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', async ()=> {
 // Getting some data
 async function getData()
 {
+    console.log("getting data..")
     let datas = await fetch('./data.json');
     datas = await datas.json();
     return datas;
