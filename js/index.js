@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', async ()=> {
     await main()
 })
 
+// Getting some data
 async function getData()
 {
     let datas = await fetch('./data.json');
@@ -20,6 +21,7 @@ async function main()
     drawTable(datas);
 }
 
+// Draw chart function
 function drawChart(datas)
 {
     let labels = datas.find(item => item['device'] === 'sensor1')['data'].map(item=>item['timestamp']);
