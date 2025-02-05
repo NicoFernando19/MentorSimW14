@@ -82,7 +82,6 @@ function drawTable(datas)
 }
 
 
-// average function
 function average(array)
 {
     let total = 0;
