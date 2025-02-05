@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', async ()=> {
     console.log("main running")
 })
 
-// Getting some data
 async function getData()
 {
     console.log("getting data..")
@@ -15,7 +14,6 @@ async function getData()
     return datas;
 }
 
-//Main function
 async function main()
 {
     let datas = await getData();
