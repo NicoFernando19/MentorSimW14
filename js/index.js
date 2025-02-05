@@ -62,7 +62,6 @@ function drawChart(datas)
     })
 }
 
-//Draw Table
 function drawTable(datas)
 {
     let devicesObj = datas.map(item => {
